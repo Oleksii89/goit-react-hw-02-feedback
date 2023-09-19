@@ -1,9 +1,20 @@
-import FeedbackWidget from 'components/FeedbackWidget/FeedbackWidget';
+import { Section } from 'components/Section/Section';
+import { Component } from 'react';
 
-export const App = () => {
-  return (
-    <div>
-      <FeedbackWidget></FeedbackWidget>
-    </div>
-  );
-};
+class App extends Component {
+  state = {
+    good: 0,
+    neutral: 0,
+    bad: 0,
+  };
+
+  render() {
+    return (
+      <div>
+        <Section></Section>
+      </div>
+    );
+  }
+}
+
+export default App;
